@@ -1,3 +1,4 @@
+import { HelmetProvider } from "react-helmet-async";
 import { createGlobalStyle } from "styled-components";
 import "./App.css";
 import Router from "./Router";
@@ -68,7 +69,9 @@ function App() {
   return (
     <>
       <GlobalStyle />
-      <Router />
+      <HelmetProvider>
+        <Router />
+      </HelmetProvider>
     </>
   );
 }

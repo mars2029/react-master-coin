@@ -38,7 +38,7 @@ export interface Whitepaper {
   thumbnail: string;
 }
 
-export interface InfoData {
+export interface IInfo {
   id: string;
   name: string;
   symbol: string;
@@ -89,7 +89,7 @@ export interface Quotes {
   USD: USD;
 }
 
-export interface PriceData {
+export interface IPrice {
   id: string;
   name: string;
   symbol: string;
